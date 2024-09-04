@@ -6,7 +6,7 @@
 /*   By: tsabri <tsabri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 13:48:50 by tsabri            #+#    #+#             */
-/*   Updated: 2024/09/03 13:56:06 by tsabri           ###   ########.fr       */
+/*   Updated: 2024/09/04 13:34:01 by tsabri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,12 @@ int	ft_ultimate_range(int **range, int min, int max)
 		return (0);
 	}
 	rcount = max - min;
-	mat = malloc(rcount);
+	mat = malloc(rcount * sizeof(int));
+	if (!mat)
+	{
+		*range = NULL;
+		return (0);
+	}
 	i = 0;
 	while (i < rcount)
 	{

@@ -6,7 +6,7 @@
 /*   By: tsabri <tsabri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 09:45:51 by tsabri            #+#    #+#             */
-/*   Updated: 2024/09/03 10:07:09 by tsabri           ###   ########.fr       */
+/*   Updated: 2024/09/04 13:29:16 by tsabri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,13 @@ char	*ft_strdup(char *src)
 	if (!src)
 		return (NULL);
 	len = ft_strlen(src);
-	s = malloc(len);
+	s = malloc(sizeof(char) * len + 1);
 	i = 0;
 	while (i < len)
 	{
 		s[i] = src[i];
 		i++;
 	}
+	s[i] = '\0';
 	return (s);
 }
