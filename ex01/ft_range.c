@@ -6,7 +6,7 @@
 /*   By: tsabri <tsabri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 09:55:56 by tsabri            #+#    #+#             */
-/*   Updated: 2024/09/04 13:31:46 by tsabri           ###   ########.fr       */
+/*   Updated: 2024/09/04 13:58:17 by tsabri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,13 @@ int	*ft_range(int min, int max)
 	return (arr);
 }
 
-int	main(void)
-{
-	int	i;
-	int	j;
-	int	*p;
+// int	main(void)
+// {
+// 	int	i;
+// 	int	j;
+// 	int	*p;
 
-	i = 5;
-	j = 8;
-	p = ft_range(8, 5);
-}
+// 	i = 5;
+// 	j = 8;
+// 	p = ft_range(8, 5);
+// }
