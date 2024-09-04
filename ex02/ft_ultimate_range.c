@@ -6,7 +6,7 @@
 /*   By: tsabri <tsabri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 13:48:50 by tsabri            #+#    #+#             */
-/*   Updated: 2024/09/04 13:34:01 by tsabri           ###   ########.fr       */
+/*   Updated: 2024/09/04 13:56:57 by tsabri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	if (!mat)
 	{
 		*range = NULL;
-		return (0);
+		return (-1);
 	}
 	i = 0;
 	while (i < rcount)
